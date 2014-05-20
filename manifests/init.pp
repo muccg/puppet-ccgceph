@@ -18,6 +18,7 @@ class ccgceph ($ceph_fsid, $mon_secret) inherits ccgceph::params {
     } ->
     user { "ceph":
         ensure => present,
+        managehome => true,
         comment => "Ceph",
     } ->
     sudo::conf { 'ceph':
