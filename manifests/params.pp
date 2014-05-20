@@ -14,5 +14,6 @@ class ccgceph::params () {
     ]
 
     $packages = [
+        'ceph-deploy'
     ]
 }
