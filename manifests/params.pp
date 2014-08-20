@@ -2,7 +2,10 @@
 class ccgceph::params () {
 
     case $::hostname {
-      /^compute([\d+])$/: {
+      /^compute(\d+)$/: {
+        $hostnum = $1
+      }
+      /^ceph(\d+)$/: {
         $hostnum = $1
       }
       default: {
