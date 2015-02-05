@@ -5,6 +5,10 @@ class ccgceph::params () {
       /^compute(\d+)$/: {
         $hostnum = $1
       }
+      # match docker test node name
+      /^computenode$/: {
+        $hostnum = $1
+      }
       /^ceph(\d+)$/: {
         $hostnum = $1
       }
