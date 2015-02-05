@@ -1,6 +1,6 @@
 #
 class ccgceph ($ceph_fsid, $mon_secret) inherits ccgceph::params {
-    include repo::ceph
+    # include repo::ceph
 
     package { $ccgceph::absent_packages:
         ensure  => absent
